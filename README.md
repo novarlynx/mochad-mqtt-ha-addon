@@ -1,5 +1,9 @@
 # mochad-mqtt-ha-addon
 
+Novar Lynx's version - attempting to fix issues trying to install on a Raspberry Pi 3B
+
+-----
+
 Mochad-mqtt-ha-addon provides an alternative to the X10 integration built into Home Assistant. Added features are the ability to receive inputs from X10 remote controls and motion detectors, and use them as triggers in automations to control other devices. In addition to controlling X10 powerline devices, it also allows control directly to and from X10 RF devices. It provides a bridge between the Mosquitto MQTT addon and the [Mochad](https://github.com/FloridaMan7588/mochad-ha-addon) addon. It allows X10 devices to appear to Home Assistant as MQTT devices. It is basically just the Perl script from [mochad-mqtt](https://github.com/timothyh/mochad-mqtt) with a few changes, and the necessary files to make it install as a Home Assistant addon.
 
 I did this just for my own use, but decided to publish it on [Github](https://github.com/jeffs555/mochad-mqtt-ha-addon) just in case anyone else is still using some X10 devices. I had been running mochad-mqtt on a separate linux machine and added provisions for X10 RF devices to the mochad-mqtt perl script. It was working very well, but I wanted to run it on the same Raspberry Pi running Home Assistant Operating System. Never written a HA addon before so not sure I did things the right way. It works for me, but your mileage may vary. Does not currently support X10 Security Devices or X10 cameras as I don't have any.
@@ -13,7 +17,7 @@ To install this addon, you will need to install the Mosquitto MQTT broker in the
 
 ## Installation
 
-In HA, you go to SETTINGS, ADD-ONS, ADD-ON Store. Then from the 3 dots at the top right, select repositories and add the repository https://github.com/jeffs555/mochad-mqtt-ha-addon. Then from the 3 dot menu, check for updates, then leave and reenter the addons page, and mochad-mqtt-ha-addon should appear in the store, and you can click it to install.
+In HA, you go to SETTINGS, ADD-ONS, ADD-ON Store. Then from the 3 dots at the top right, select repositories and add the repository https://github.com/novarlynx/mochad-mqtt-ha-addon. Then from the 3 dot menu, check for updates, then leave and reenter the addons page, and mochad-mqtt-ha-addon should appear in the store, and you can click it to install.
 
 
 
